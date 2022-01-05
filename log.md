@@ -9,3 +9,7 @@
 ### 2022.1.4
 
 看完 1/24 video，完成 guide 中 Exercise ，本节无 lab、project
+
+### 2022.1.5 （其实现在已经1.6了）
+
+看完 1/26 video，开始 proj0，进度到 ReadRadius 
