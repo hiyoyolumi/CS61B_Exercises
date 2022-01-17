@@ -1,8 +1,8 @@
 import java.util.*;
 
 public class Exercise1 {
-    public static List<String> getWords(String inputFileName) {
-        In in = new In(inputFileName);
+    public static List<String> getWords() {
+        In in = new In();
         List<String> lst = new ArrayList<>();
 
         while (!in.isEmpty()) {
@@ -25,8 +25,17 @@ public class Exercise1 {
             counts.put(t, 0);
         }
         for (String s : words) {
-            counts.put(s, counts.get(s) + 1);
+            if (counts.containsKey(s)) {
+                counts.put(s, counts.get(s) + 1);
+            }
         }
         return counts;
+    }
+
+    public static void main(String[] args) {
+        List<String> words = getWords();
+        System.out.println(words);
+        int counts = countUniqueWords(words);
+        System.out.println(counts) ;
     }
 }
